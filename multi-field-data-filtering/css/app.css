@@ -1,0 +1,90 @@
+body {
+  background-image: linear-gradient(to right, #000e2f 0%, #002376 100%);
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-family: "Staatliches", cursive;
+  font-size: 6rem;
+  padding: 3rem 0;
+  margin: 0;
+  color: #e1e1e1;
+}
+
+.contenedor {
+  background-color: white;
+  max-width: 1200px;
+  margin: 0 auto 5rem;
+  border-radius: 2rem;
+  padding-top: 2rem;
+}
+
+.contenedor h1 {
+  color: #000e2f;
+}
+
+p {
+  font-size: 2rem;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+form {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem;
+  background: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#resultado {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+
+#resultado div {
+  border: 1px solid #d9d9d9;
+}
+
+#resultado p {
+  margin: 0;
+}
+
+.modelo-completo {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 1rem;
+  background-color: #000e2f;
+  color: #e1e1e1;
+}
+
+.caracteristicas {
+  text-transform: lowercase;
+  padding-top: 1rem;
+}
+
+.precio-auto {
+  font-weight: 700;
+  padding: 1rem;
+}
+
+.alerta {
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #e1e1e1;
+  font-size: 2rem;
+  border-bottom-left-radius: 1.8rem;
+  border-bottom-right-radius: 1.8rem;
+  background-color: rgb(192, 29, 29);
+}
