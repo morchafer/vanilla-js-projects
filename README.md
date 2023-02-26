@@ -25,3 +25,11 @@
   <img src="./multi-field-data-filtering/img/filtrar.png" alt="multi-field-data-filtering" width="60" />
 
   [Source](./multi-field-data-filtering/) | [Demo](https://multi-field-data-filtering.netlify.app/)
+
+<br>
+
+- To-Do List App with Local Storage.
+
+  <img src="./to-do-list-app/img/to-do.png" alt="to-do-list-app" width="60" />
+
+  [Source](./to-do-list-app/) | [Demo](https://to-do-list-app-fm.netlify.app/)
