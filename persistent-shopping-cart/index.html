@@ -5,22 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Persistent Shopping Cart</title>
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/skeleton.css" />
-    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="shortcut icon" href="./img/cart.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/skeleton.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
   </head>
   <body>
-    <header id="header" class="header">
+    <header>
       <div class="container">
-        <div class="row">
-          <div class="four columns">
-            <img src="img/logo.png" id="logo" />
-          </div>
-          <div class="two columns u-pull-right">
+        <div class="header-flex">
+          <h1>Universidad en línea</h1>
+          <div>
             <ul>
               <li class="submenu">
-                <img src="img/cart.png" id="img-carrito" />
+                <img src="./img/cart.png" id="img-carrito" />
                 <div id="carrito">
                   <table id="lista-carrito" class="u-full-width">
                     <thead>
@@ -34,7 +38,6 @@
                     </thead>
                     <tbody></tbody>
                   </table>
-
                   <a href="#" id="vaciar-carrito" class="button u-full-width"
                     >Vaciar Carrito</a
                   >
@@ -46,25 +49,20 @@
       </div>
     </header>
 
-    <div id="hero">
+    <div class="hero">
       <div class="container">
         <div class="row">
-          <div class="six columns">
+          <div class="seven columns">
             <div class="contenido-hero">
-              <h2>Aprende algo nuevo</h2>
-              <p>Todos los cursos a $15</p>
-              <form id="busqueda" class="formulario">
+              <h2>Aprende algo nuevo todos los días</h2>
+              <p>Todos los cursos a $15.00 USD</p>
+              <form>
                 <input
-                  class="u-full-width"
+                  class="u-full-width buscador"
                   type="text"
                   placeholder="¿Qué te gustaría aprender?"
-                  id="buscador"
                 />
-                <input
-                  type="submit"
-                  id="submit-buscador"
-                  class="submit-buscador"
-                />
+                <input type="submit" class="submit-buscador" />
               </form>
             </div>
           </div>
@@ -74,7 +72,7 @@
 
     <div class="barra">
       <div class="container">
-        <div class="row">
+        <div class="row barra-flex">
           <div class="four columns icono icono1">
             <p>
               20,000 Cursos en línea <br />
@@ -98,19 +96,19 @@
     </div>
 
     <div id="lista-cursos" class="container">
-      <h1 id="encabezado" class="encabezado">Cursos en línea</h1>
+      <h2 class="caption">Cursos disponibles</h2>
       <div class="row">
         <div class="four columns">
           <div class="card">
-            <img src="img/curso1.jpg" class="imagen-curso u-full-width" />
+            <img src="./img/curso1.jpg" class="imagen-curso u-full-width" />
             <div class="info-card">
               <h4>HTML5, CSS3, JavaScript para Principiantes</h4>
               <p>Fernando Morales</p>
-              <img src="img/estrellas.png" />
+              <img src="./img/estrellas.png" />
               <p class="precio">$200 <span class="u-pull-right">$15</span></p>
               <a
                 href="#"
-                class="u-full-width button-primary button input agregar-carrito"
+                class="u-full-width button input agregar-carrito"
                 data-id="1"
                 >Agregar al carrito</a
               >
@@ -120,15 +118,15 @@
         </div>
         <div class="four columns">
           <div class="card">
-            <img src="img/curso2.jpg" class="imagen-curso u-full-width" />
+            <img src="./img/curso2.jpg" class="imagen-curso u-full-width" />
             <div class="info-card">
               <h4>Curso de Comida Vegetariana</h4>
               <p>Fernando Morales</p>
-              <img src="img/estrellas.png" />
+              <img src="./img/estrellas.png" />
               <p class="precio">$200 <span class="u-pull-right">$15</span></p>
               <a
                 href="#"
-                class="u-full-width button-primary button input agregar-carrito"
+                class="u-full-width button input agregar-carrito"
                 data-id="2"
                 >Agregar al carrito</a
               >
@@ -137,15 +135,15 @@
         </div>
         <div class="four columns">
           <div class="card">
-            <img src="img/curso3.jpg" class="imagen-curso u-full-width" />
+            <img src="./img/curso3.jpg" class="imagen-curso u-full-width" />
             <div class="info-card">
               <h4>Guitarra para Principiantes</h4>
               <p>Fernando Morales</p>
-              <img src="img/estrellas.png" />
+              <img src="./img/estrellas.png" />
               <p class="precio">$200 <span class="u-pull-right">$15</span></p>
               <a
                 href="#"
-                class="u-full-width button-primary button input agregar-carrito"
+                class="u-full-width button input agregar-carrito"
                 data-id="3"
                 >Agregar al carrito</a
               >
@@ -158,15 +156,15 @@
       <div class="row">
         <div class="four columns">
           <div class="card">
-            <img src="img/curso4.jpg" class="imagen-curso u-full-width" />
+            <img src="./img/curso4.jpg" class="imagen-curso u-full-width" />
             <div class="info-card">
               <h4>Huerto en tu casa</h4>
               <p>Fernando Morales</p>
-              <img src="img/estrellas.png" />
+              <img src="./img/estrellas.png" />
               <p class="precio">$200 <span class="u-pull-right">$15</span></p>
               <a
                 href="#"
-                class="u-full-width button-primary button input agregar-carrito"
+                class="u-full-width button input agregar-carrito"
                 data-id="4"
                 >Agregar al carrito</a
               >
@@ -176,15 +174,15 @@
         </div>
         <div class="four columns">
           <div class="card">
-            <img src="img/curso5.jpg" class="imagen-curso u-full-width" />
+            <img src="./img/curso5.jpg" class="imagen-curso u-full-width" />
             <div class="info-card">
               <h4>Decoración con productos de tu hogar</h4>
               <p>Fernando Morales</p>
-              <img src="img/estrellas.png" />
+              <img src="./img/estrellas.png" />
               <p class="precio">$200 <span class="u-pull-right">$15</span></p>
               <a
                 href="#"
-                class="u-full-width button-primary button input agregar-carrito"
+                class="u-full-width button input agregar-carrito"
                 data-id="5"
                 >Agregar al carrito</a
               >
@@ -194,15 +192,15 @@
         </div>
         <div class="four columns">
           <div class="card">
-            <img src="img/curso1.jpg" class="imagen-curso u-full-width" />
+            <img src="./img/curso6.jpg" class="imagen-curso u-full-width" />
             <div class="info-card">
               <h4>Diseño Web para Principiantes</h4>
               <p>Fernando Morales</p>
-              <img src="img/estrellas.png" />
+              <img src="./img/estrellas.png" />
               <p class="precio">$200 <span class="u-pull-right">$15</span></p>
               <a
                 href="#"
-                class="u-full-width button-primary button input agregar-carrito"
+                class="u-full-width button input agregar-carrito"
                 data-id="6"
                 >Agregar al carrito</a
               >
@@ -215,15 +213,15 @@
       <div class="row">
         <div class="four columns">
           <div class="card">
-            <img src="img/curso2.jpg" class="imagen-curso u-full-width" />
+            <img src="./img/curso7.jpg" class="imagen-curso u-full-width" />
             <div class="info-card">
               <h4>Comida Mexicana para principiantes</h4>
               <p>Fernando Morales</p>
-              <img src="img/estrellas.png" />
+              <img src="./img/estrellas.png" />
               <p class="precio">$200 <span class="u-pull-right">$15</span></p>
               <a
                 href="#"
-                class="u-full-width button-primary button input agregar-carrito"
+                class="u-full-width button input agregar-carrito"
                 data-id="7"
                 >Agregar al carrito</a
               >
@@ -233,15 +231,15 @@
         </div>
         <div class="four columns">
           <div class="card">
-            <img src="img/curso3.jpg" class="imagen-curso u-full-width" />
+            <img src="./img/curso8.jpg" class="imagen-curso u-full-width" />
             <div class="info-card">
               <h4>Estudio Musical en tu casa</h4>
               <p>Fernando Morales</p>
-              <img src="img/estrellas.png" />
+              <img src="./img/estrellas.png" />
               <p class="precio">$200 <span class="u-pull-right">$15</span></p>
               <a
                 href="#"
-                class="u-full-width button-primary button input agregar-carrito"
+                class="u-full-width button input agregar-carrito"
                 data-id="8"
                 >Agregar al carrito</a
               >
@@ -251,15 +249,15 @@
         </div>
         <div class="four columns">
           <div class="card">
-            <img src="img/curso4.jpg" class="imagen-curso u-full-width" />
+            <img src="./img/curso9.jpg" class="imagen-curso u-full-width" />
             <div class="info-card">
               <h4>Cosecha tus propias frutas y verduras</h4>
               <p>Fernando Morales</p>
-              <img src="img/estrellas.png" />
+              <img src="./img/estrellas.png" />
               <p class="precio">$200 <span class="u-pull-right">$15</span></p>
               <a
                 href="#"
-                class="u-full-width button-primary button input agregar-carrito"
+                class="u-full-width button input agregar-carrito"
                 data-id="9"
                 >Agregar al carrito</a
               >
@@ -272,15 +270,15 @@
       <div class="row">
         <div class="four columns">
           <div class="card">
-            <img src="img/curso5.jpg" class="imagen-curso u-full-width" />
+            <img src="./img/curso10.jpg" class="imagen-curso u-full-width" />
             <div class="info-card">
               <h4>Prepara galletas caseras</h4>
               <p>Fernando Morales</p>
-              <img src="img/estrellas.png" />
+              <img src="./img/estrellas.png" />
               <p class="precio">$200 <span class="u-pull-right">$15</span></p>
               <a
                 href="#"
-                class="u-full-width button-primary button input agregar-carrito"
+                class="u-full-width button input agregar-carrito"
                 data-id="10"
                 >Agregar al carrito</a
               >
@@ -290,15 +288,15 @@
         </div>
         <div class="four columns">
           <div class="card">
-            <img src="img/curso1.jpg" class="imagen-curso u-full-width" />
+            <img src="./img/curso11.jpg" class="imagen-curso u-full-width" />
             <div class="info-card">
               <h4>JavaScript Moderno con ES6</h4>
               <p>Fernando Morales</p>
-              <img src="img/estrellas.png" />
+              <img src="./img/estrellas.png" />
               <p class="precio">$200 <span class="u-pull-right">$15</span></p>
               <a
                 href="#"
-                class="u-full-width button-primary button input agregar-carrito"
+                class="u-full-width button input agregar-carrito"
                 data-id="11"
                 >Agregar al carrito</a
               >
@@ -308,15 +306,15 @@
         </div>
         <div class="four columns">
           <div class="card">
-            <img src="img/curso2.jpg" class="imagen-curso u-full-width" />
+            <img src="./img/curso12.jpg" class="imagen-curso u-full-width" />
             <div class="info-card">
               <h4>100 Recetas de Comida Natural</h4>
               <p>Fernando Morales</p>
-              <img src="img/estrellas.png" />
+              <img src="./img/estrellas.png" />
               <p class="precio">$200 <span class="u-pull-right">$15</span></p>
               <a
                 href="#"
-                class="u-full-width button-primary button input agregar-carrito"
+                class="u-full-width button input agregar-carrito"
                 data-id="12"
                 >Agregar al carrito</a
               >
@@ -328,11 +326,11 @@
       <!--.row-->
     </div>
 
-    <footer id="footer" class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="row">
           <div class="four columns">
-            <nav id="principal" class="menu">
+            <nav class="menu">
               <a class="enlace" href="#">Para tu Negocio</a>
               <a class="enlace" href="#">Conviertete en Instructor</a>
               <a class="enlace" href="#">Aplicaciones Móviles</a>
@@ -341,7 +339,7 @@
             </nav>
           </div>
           <div class="four columns">
-            <nav id="secundaria" class="menu">
+            <nav class="menu">
               <a class="enlace" href="#">¿Quiénes Somos?</a>
               <a class="enlace" href="#">Empleo</a>
               <a class="enlace" href="#">Blog</a>
@@ -351,6 +349,6 @@
       </div>
     </footer>
 
-    <script src="js/app.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>

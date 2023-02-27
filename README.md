@@ -6,7 +6,7 @@
 
 - Persistent Shopping Cart with Local Storage.
 
-  <img src="./persistent-shopping-cart/img/cart-2.png" alt="persistent-shopping-cart" width="60" />
+  <img src="./persistent-shopping-cart/img/cart.png" alt="persistent-shopping-cart" width="60" />
 
   [Source](./persistent-shopping-cart/) | [Demo](https://persistent-shopping-cart.netlify.app/)
 

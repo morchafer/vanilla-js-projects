@@ -725,3 +725,7 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+
+.bg-body {
+  background-image: linear-gradient(to right, #000e2f 0%, #002376 100%);
+}
