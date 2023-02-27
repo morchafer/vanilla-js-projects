@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Car Insurance Quotes</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cotiza tu seguro de auto</h1>
+      <div id="contenido">
+        <form id="cotizar-seguro">
+          <div class="select-container">
+            <label class="select-label" for="marca">Marca:</label>
+            <select id="marca">
+              <option value="">- Seleccionar -</option>
+              <option value="1">Americano</option>
+              <option value="2">Asiático</option>
+              <option value="3">Europeo</option>
+            </select>
+          </div>
+          <div class="select-container">
+            <label class="select-label" for="year">Año:</label>
+            <select id="year"></select>
+          </div>
+          <fieldset>
+            <legend>Tipo de seguro</legend>
+            <div class="tipo-container">
+              <div class="tipo-flex">
+                <label>Básico</label>
+                <input type="radio" name="tipo" value="basico" checked />
+              </div>
+              <div class="tipo-flex">
+                <label>Completo</label>
+                <input type="radio" name="tipo" value="completo" />
+              </div>
+            </div>
+          </fieldset>
+
+          <div id="cargando">
+            <div class="spinner">
+              <div class="bounce1"></div>
+              <div class="bounce2"></div>
+              <div class="bounce3"></div>
+            </div>
+          </div>
+          <div id="resultado"></div>
+          <button type="submit" class="cotizar-seguro">Cotizar seguro</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>

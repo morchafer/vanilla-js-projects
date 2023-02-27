@@ -33,3 +33,11 @@
   <img src="./to-do-list-app/img/to-do.png" alt="to-do-list-app" width="60" />
 
   [Source](./to-do-list-app/) | [Demo](https://to-do-list-app-fm.netlify.app/)
+
+<br>
+
+- Car Insurance Quotes.
+
+  <img src="./car-insurance-quotes/img/favicon.png" alt="car-insurance-quotes" width="60" />
+
+  [Source](./car-insurance-quotes/) | [Demo](https://car-insurance-quotes.netlify.app/)
